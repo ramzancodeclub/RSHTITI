@@ -1,0 +1,217 @@
+@media (max-width: 1000px) {
+    .primary-navigation a {
+        font-size: var(--fs-300);
+        padding: 0 0.5rem;
+    }
+
+    .dropdown-menu {
+        width: 20rem;
+    }
+
+    .contact-menu {
+        width: 90%;
+        transform: translate(5.5%, 0%);
+    }
+
+    .contact-header {
+        font-size: var(--fs-300);
+        height: 40px;
+    }
+
+    .map-container iframe {
+        height: 90%;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr fit-content;
+    }
+
+    .slider-content {
+        flex: 1;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .slide-img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .top-bar {
+        justify-content: center;
+    }
+
+    header {
+        padding: 1rem 1rem;
+    }
+
+    .primary-navigation {
+        width: 50%;
+        min-height: 100vh;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        z-index: 1000;
+        padding: min(20rem, 10vh) 1rem;
+        transform: translateX(100%);
+        transition: transform 500ms ease-in-out;   
+    }
+
+    .primary-navigation li {
+        padding-bottom: 1rem;
+    }
+
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0);
+    }
+
+    .primary-navigation.underline-indicators > .active {
+        border: 0;
+    }
+
+    .dropdown-menu {
+        width: 18rem;
+        position: relative;
+    }
+
+    .contact-menu {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-detail {
+        overflow-y: scroll;
+    }
+
+    .map-container iframe {
+        height: 79.5%;
+    }
+
+    .contact-content-list {
+        gap: 0rem;
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 2000;
+        right: 0.75rem;
+        top: 0.75rem;
+        background: transparent;
+        background-image: url(../icons/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 1.5rem;
+        aspect-ratio: 1;
+        border: 0;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url(../icons/icon-close.svg);
+    }
+
+    .mobile-nav-toggle:focus-visible {
+        outline: 5px solid hsl( var(--clr-white) );
+        outline-offset: 5px;
+    }
+
+    .slider__nav-button {
+        height: 40px;
+        width: 40px;
+      }
+      .slider__navlink {
+        height: 12px;
+        width: 12px;
+      }
+}
+
+@media (max-width: 650px) {
+    .slider-content {
+        flex: 1;
+        max-width: 300px;
+    }
+
+    .slide-img {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .slide-1 h3 {
+        font-size: var(--fs-200);
+    }
+
+    .slide-1 p {
+        font-size: var(--fs-100);
+    }
+
+    .slider__nav {
+        bottom: -0.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .top-bar {
+        height: 100px;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 0rem;
+        gap: 0rem;
+    }
+    .contact-number {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-icons {
+        width: 100%;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        background-color: hsl( var(--clr-secondary) );
+    }
+
+    .social-icons a {
+        padding: 0.3rem;
+    }
+
+    .primary-navigation {
+        width: 70%;
+    }
+
+    .dropdown-menu {
+        width: 15rem;
+        padding: 0.5rem 0.2rem;
+    }
+
+    .dropdown-menu a {
+        padding: 0.5rem 0.2rem;
+    }
+
+    .mobile-nav-toggle {
+        width: 1.3rem;
+        right: 0.75rem;
+        top: 0.9rem;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .primary-navigation a {
+        font-size: var(--fs-200);
+    }
+
+    .dropdown-menu {
+        width: 12rem;
+    }
+}
