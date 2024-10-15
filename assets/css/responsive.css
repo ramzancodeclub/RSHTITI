@@ -131,6 +131,14 @@
         height: 12px;
         width: 12px;
       }
+
+      .affiliate-banner {
+        height: 80px;
+      }
+
+      .affiliate-logos img {
+        width: 60px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -153,7 +161,21 @@
     }
 
     .slider__nav {
-        bottom: -0.2rem;
+        display: none;
+    }
+
+    .affiliate-banner {
+        height: 100px;
+        flex-direction: column;
+        gap: 0rem;
+      }
+
+      .affiliate-logos {
+        gap: 2rem;
+      }
+
+      .affiliate-logos img {
+        width: 50px;
     }
 }
 

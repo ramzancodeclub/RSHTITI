@@ -25,7 +25,8 @@
     --Poppins: "Poppins", system-ui;
 
     /* font-sizes*/
-    --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+    /* --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem); */
+    --fs-900: clamp(0.75rem, 1.5vw + 0.75rem, 2rem);
     --fs-800: 3.5rem;
     --fs-700: 2.5rem;
     --fs-600: 2rem;
@@ -130,6 +131,7 @@ body {
 .main-container {
     position: relative;
     max-width: 1600px;
+    overflow-x: hidden;
 }
 
 /*----------------*/
@@ -488,4 +490,26 @@ main {
 
 /*----------------*/
 /*main slider end */
+/*----------------*/
+
+/*----------------*/
+/*Affiliate Banner Start */
+/*----------------*/
+.affiliate-banner {
+    height: 100px;
+    background-color: hsl( var(--clr-white) );
+}
+
+.affiliate-banner h2 {
+    font-size: 2rem;
+    font-size: var(--fs-900);
+    font-weight: 600;
+    color: hsl( var(--clr-secondary) );
+}
+
+.affiliate-logos img {
+    width: 78px;
+}
+/*----------------*/
+/*Affiliate Banner End */
 /*----------------*/
