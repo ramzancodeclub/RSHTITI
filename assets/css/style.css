@@ -92,6 +92,10 @@
     gap: var(--gap, 1rem);
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
 .w-100 {
     width: 100%;
 }
@@ -104,6 +108,16 @@
     display: block;
 }
 
+.section-heading {
+    padding-top: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+/* visually hidden */
 .sr-only {
     position: absolute;
     width: 1px;
@@ -513,3 +527,133 @@ main {
 /*----------------*/
 /*Affiliate Banner End */
 /*----------------*/
+
+/*----------------*/
+/*Course Section Start */
+/*----------------*/
+.course {
+    background-color: hsl( var(--clr-primary) );
+    border: 1px solid hsl( var(--clr-secondary) );
+}
+
+.course-content {
+    padding: 1rem;
+}
+
+.course-cards-container {
+    max-width: 1340px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* course card */
+.course-card {
+    width: 20rem;
+    height: 30rem;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    /* transition: all 0.3s ease-in-out; */
+    transition: all 0.3s ease;
+}
+
+.course-card:hover {
+    transform: scale(0.99);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid hsl( var(--clr-secondary) );
+}
+
+.course-img {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* padding: 1rem; */
+}
+
+.course-img img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* padding: 1rem; */
+}
+
+.course-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.course-info h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+.course-info p {
+    font-size: 0.95rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.2rem;
+    padding: 0.5rem;
+    text-align: start;
+    text-align: center;
+    max-width: 35ch;
+    margin: 0;
+}
+
+.duration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: hsl( var(--clr-gray-dark) );
+    margin: 0;
+}
+
+.duration img {
+    width: 15px;
+    margin-right: 0.3rem;
+}
+
+.enrol-btn {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.enrol-btn:hover {
+    background-color: var(--primary-color);
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 2rem !important;
+}
+
+.slick-prev {
+    left: -50px !important;
+}
+* {
+    /* outline: 1px solid blue; */
+}
