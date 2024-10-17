@@ -251,6 +251,18 @@
         width: 18rem;
         height: 28rem;
     }
+    .course-img {
+        min-width: 260px;
+        min-height: 120px;
+    }
+
+    .course-img img { 
+        width: 95%;
+    }
+
+    .web-img {
+       width: 80% !important;
+    }
 
     .course-cards-container {
         max-width: 300px;
@@ -270,6 +282,15 @@
     .course-card {
         width: 17rem;
         height: 27rem;
+    }
+
+    .course-img {
+        min-width: 200px;
+        min-height: 100px;
+    }
+
+    .course-img img { 
+        width: 90%;
     }
 
     .course-cards-container {
