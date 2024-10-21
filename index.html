@@ -24,6 +24,8 @@
       rel="stylesheet"
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <!-- Swiper Library CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -40,12 +42,15 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
       defer
     ></script>
+    <!-- Swiper Library JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" defer></script>
     <!-- Custom JavaScript -->
     <script src="assets/js/navigation.js" defer></script>
     <script src="assets/js/main_slider_left.js" defer></script>
     <script src="assets/js/main_slider_right.js" defer></script>
     <script src="assets/js/course_slider.js" defer></script>
     <script src="assets/js/video_slider.js" defer></script>
+    <script src="assets/js/image_slider.js" defer></script>
     <title>Rana Sikandar Hayat Khan Technical & IT Intitute Jamber</title>
   </head>
   <body>
@@ -316,7 +321,7 @@
         Course Section Start
         ///////////////////////-->
         <div class="course w-100">
-          <div class="course-header">
+          <div class="courses-heading">
             <h2 class="section-heading">Our Courses</h2>
           </div>
           <div class="course-content w-100 flex-center">
@@ -348,7 +353,7 @@
                     <p>4 Hours per day</p>
                   </div>
                   </div>
-                  <button class="enrol-btn">Enroll Now</button>
+                  <a href="https://nsis.navttc.gov.pk/sign-in" target="_blank" class="enrol-btn" role="button">Enroll Now</a>
                 </div>
               </div>
               <div class="card-1">
@@ -377,7 +382,7 @@
                     <p>4 Hours per day</p>
                   </div>
                   </div>
-                  <button class="enrol-btn">Enroll Now</button>
+                  <a href="https://nsis.navttc.gov.pk/sign-in" target="_blank" class="enrol-btn" role="button">Enroll Now</a>
                 </div>
               </div>
               <div class="card-1">
@@ -406,7 +411,7 @@
                     <p>4 Hours per day</p>
                   </div>
                   </div>
-                  <button class="enrol-btn">Enroll Now</button>
+                  <a href="https://nsis.navttc.gov.pk/sign-in" target="_blank" class="enrol-btn" role="button">Enroll Now</a>
                 </div>
               </div>
               <div class="card-1">
@@ -435,7 +440,7 @@
                     <p>4 Hours per day</p>
                   </div>
                   </div>
-                  <button class="enrol-btn">Enroll Now</button>
+                  <a href="https://nsis.navttc.gov.pk/sign-in" target="_blank" class="enrol-btn" role="button">Enroll Now</a>
                 </div>
               </div>
               <div class="card-1">
@@ -464,7 +469,7 @@
                     <p>4 Hours per day</p>
                   </div>
                   </div>
-                  <button class="enrol-btn">Enroll Now</button>
+                  <a href="https://nsis.navttc.gov.pk/sign-in" target="_blank" class="enrol-btn" role="button">Enroll Now</a>
                 </div>
               </div>
             </div>
@@ -476,7 +481,10 @@
       <!-- ///////////////////// 
         Video Section Start
         ///////////////////////-->
-        <section class="video-section">
+        <section class="video-gallery">
+          <div class="video-gallery-heading">
+            <h2 class="section-heading">Our Videos</h2>
+          </div>
           <div class="video-container">
             <div class="wrapper scroll-x">
               <ul class="items">
@@ -498,7 +506,64 @@
       <!-- ///////////////////// 
         Image Section Star
         ///////////////////////-->
-        <section class="image-section"></section>
+        <section class="image-gallery">
+          <div class="image-gallery-heading">
+            <h2 class="section-heading">Our Images</h2>
+          </div>
+          <div class="image-container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <div class="card" onclick="openPopup('assets/images/Stitching-Lab2.jpg')">
+                          <img src="assets/images/Stitching-Lab-Thumbnail.jpg" alt="Stitching Lab image" />
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="card" onclick="openPopup('assets/images/Stitching-Lab2.jpg')">
+                          <img src="assets/images/Stitching-Lab-Thumbnail.jpg" alt="Stitching Lab image" />
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="card" onclick="openPopup('assets/images/Stitching-Lab2.jpg')">
+                          <img src="assets/images/Stitching-Lab-Thumbnail.jpg" alt="Stitching Lab image" />
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="card" onclick="openPopup('assets/images/Stitching-Lab2.jpg')">
+                          <img src="assets/images/Stitching-Lab-Thumbnail.jpg" alt="Stitching Lab image" />
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="card" onclick="openPopup('assets/images/Stitching-Lab2.jpg')">
+                          <img src="assets/images/Stitching-Lab-Thumbnail.jpg" alt="Stitching Lab image" />
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="card" onclick="openPopup('assets/images/Stitching-Lab2.jpg')">
+                          <img src="assets/images/Stitching-Lab-Thumbnail.jpg" alt="Stitching Lab image" />
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="card" onclick="openPopup('assets/images/Stitching-Lab2.jpg')">
+                          <img src="assets/images/Stitching-Lab-Thumbnail.jpg" alt="Stitching Lab image" />
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="card" onclick="openPopup('assets/images/Stitching-Lab2.jpg')">
+                          <img src="assets/images/Stitching-Lab-Thumbnail.jpg" alt="Stitching Lab image" />
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+          <!-- Image gallery popup -->
+          <div id="popup" class="popup">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <img id="popup-image" src="" alt="Popup Image" />
+          </div>
+          <div class="popup-overlay"></div>
+        </section>
       <!-- ///////////////////// 
         Image Section Star
         ///////////////////////-->

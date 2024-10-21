@@ -156,8 +156,20 @@
         left: -40px !important;
     }
 
-    .video-section {
-        padding: 0 3rem;
+    .video-gallery {
+        padding: 0 2rem;
+    }
+
+    .image-gallery {
+        padding: 0 2rem;
+    }
+
+    .swiper-slide {
+        width: 200px;
+    }
+
+    .popup {
+        width: 90%;
     }
 }
 
