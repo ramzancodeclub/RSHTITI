@@ -171,6 +171,16 @@
     .popup {
         width: 90%;
     }
+
+    .close {
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 1.1rem;
+        border: 1px solid hsl( var(--clr-white) );
+    }
 }
 
 @media (max-width: 750px) {

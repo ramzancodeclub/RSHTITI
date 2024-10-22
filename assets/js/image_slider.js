@@ -1,5 +1,5 @@
 const imageGallery = document.querySelector(".image-gallery");
-const likeBtns = document.querySelectorAll(".like-btn");
+const swiperSlides = document.querySelectorAll(".swiper-slide");
 
 var swiper = new Swiper(".swiper", {
     spaceBetween: 30,
@@ -27,25 +27,17 @@ function startAutoplay() {
 imageGallery.addEventListener("mouseenter", () => stopAutoplay());
 imageGallery.addEventListener("mouseleave", () => startAutoplay());
 
-likeBtns.forEach((likeBtn) => {
-    likeBtn.addEventListener("click", () => {
-        likeBtn.classList.toggle("active");
-        likeBtn.classList.toggle("pulse");
-    });
-})
-const popupOverlay = document.querySelector('.popup-overlay');
-const swiperSlide = document.querySelector('.swiper-slide');
-
-swiperSlide.forEach((slide) => {
-    slide.addEventListener("click", () => {
-        popupOverlay.classList.add('show-overlay');
+swiperSlides.forEach((swiperSlide) => {
+    swiperSlide.addEventListener("click", () => {
+        const popopOverlay = document.querySelector(".popup-overlay");
+        popopOverlay.style.display = "block";
+        const closeBtn = document.querySelector(".close");
+        closeBtn.addEventListener("click", () => {
+            popopOverlay.style.display = "none";
+        });
     });
 })
 
-// const popupOverlay = document.querySelector('.popup-overlay');
-// popupOverlay.classList.add('show-overlay');
-// const popupOverlay = document.querySelector('.popup-overlay');
-// popupOverlay.classList.remove('show-overlay');
 function openPopup(imageSrc) {
     const popup = document.getElementById('popup');
     const popupImage = document.getElementById('popup-image');
