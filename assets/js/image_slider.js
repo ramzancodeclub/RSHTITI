@@ -1,7 +1,7 @@
 const imageGallery = document.querySelector(".image-gallery");
-const swiperSlides = document.querySelectorAll(".swiper-slide");
+const imageSwiperSlides = document.querySelectorAll(".image-swiper-slide");
 
-var swiper = new Swiper(".swiper", {
+var imageSwiper = new Swiper(".image-swiper", {
     spaceBetween: 30,
     slidesPerView: "auto",
     loop: true,
@@ -14,21 +14,21 @@ var swiper = new Swiper(".swiper", {
 });
 
 function stopAutoplay() {
-    const swiperTranslate = swiper.getTranslate();
-    swiper.setTranslate(swiperTranslate);
-    swiper.autoplay.stop();
+    const swiperTranslate = imageSwiper.getTranslate();
+    imageSwiper.setTranslate(swiperTranslate);
+    imageSwiper.autoplay.stop();
 }
 
 function startAutoplay() {
-    swiper.slideTo(swiper.activeIndex, 1000, false);
-    swiper.autoplay.start();
+    imageSwiper.slideTo(imageSwiper.activeIndex, 1000, false);
+    imageSwiper.autoplay.start();
 }
 
 imageGallery.addEventListener("mouseenter", () => stopAutoplay());
 imageGallery.addEventListener("mouseleave", () => startAutoplay());
 
-swiperSlides.forEach((swiperSlide) => {
-    swiperSlide.addEventListener("click", () => {
+imageSwiperSlides.forEach((imageSwiperSlide) => {
+    imageSwiperSlide.addEventListener("click", () => {
         const popopOverlay = document.querySelector(".popup-overlay");
         popopOverlay.style.display = "block";
         const closeBtn = document.querySelector(".close");
