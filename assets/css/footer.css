@@ -1,0 +1,242 @@
+/*
+============================
+|| footer section start
+============================
+*/
+
+.footer {
+    background-color: hsl( var(--clr-primary) );
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: hsl( var(--clr-white) );
+}
+
+.footer-content {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    padding: 1rem 8rem;
+}
+
+.footer-logo img{
+    width: 5rem;
+    max-width: 100%;
+}
+.footer-logo h4{
+    color: var(--white-color);
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer-links h5{
+    color: var(--white-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.footer-nav {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.footer-nav li a:hover {
+    color: var(--secondary-color);
+    padding-left: 8px;
+}
+
+.footer-contact h5 {
+    color: var(--white-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+.footer-contact p {
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer-social-icons {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 0.5rem;
+}
+  
+.footer-social-icons li a {
+    display: grid;
+    place-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    border: 1.5px solid hsl( var(--clr-white) );
+  }
+  
+.footer-social-icons li:hover a {
+    background-color: hsl( var(--clr-secondary) );
+    animation: shake 0.3s ease;
+    margin-left: 0;
+  }
+  
+.footer-social-icons li:hover i {
+    color: #fff;
+  }
+
+  /* Shake animation */
+@keyframes shake {
+    from,
+    to {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+  }
+
+.footer-copyright {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.footer-copyright p {
+    font-size: 1.2rem;
+    color: var(--white-color);
+    margin: 0;
+    text-align: center;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.footer-link:hover {
+    color: hsl( var(--clr-primary) );
+}
+/*
+============================
+|| footer section end
+============================
+*/
+
+/*
+============================
+|| Responsive footer section start
+============================
+*/
+@media (max-width: 1200px) {
+    .footer-content {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer {
+        height: fit-content;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 0 2rem 2rem;
+    }
+
+    .footer-logo {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        place-items: center;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-copyright {
+        height: 5rem;
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 0 2rem 2rem;
+    }
+
+    .footer-logo {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .footer-links {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        place-self: start;
+    }
+
+    .footer-contact {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+        place-self: start;
+    }
+
+    .footer-copyright {
+        padding: 1rem 2rem;
+    }
+
+    .footer-copyright p {
+        font-size: 1rem;
+    }
+
+    .footer-link {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer-content {
+        padding: 2rem 2rem 2rem;
+    }
+}
+/*
+============================
+|| Responsive footer section end
+============================
+*/

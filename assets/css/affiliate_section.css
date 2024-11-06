@@ -1,0 +1,54 @@
+/*----------------*/
+/*Affiliate Banner Start */
+/*----------------*/
+.affiliate-banner {
+    height: 100px;
+    background-color: hsl( var(--clr-white) );
+    padding: 0 1rem;
+}
+
+.affiliate-banner h2 {
+    font-size: 2rem;
+    font-size: var(--fs-900);
+    font-weight: 600;
+    color: hsl( var(--clr-secondary) );
+}
+
+.affiliate-logos img {
+    width: 78px;
+}
+/*----------------*/
+/*Affiliate Banner End */
+/*----------------*/
+
+/*----------------*/
+/*Responsive Affiliate Banner Start */
+/*----------------*/
+@media (max-width: 768px) {
+    .affiliate-banner {
+        height: 80px;
+      }
+
+      .affiliate-logos img {
+        width: 60px;
+    }
+}
+
+@media (max-width: 650px) {
+    .affiliate-banner {
+        height: 100px;
+        flex-direction: column;
+        gap: 0rem !important;
+      }
+
+      .affiliate-logos {
+        gap: 0.5rem;
+      }
+
+      .affiliate-logos img {
+        width: 50px;
+    }
+}
+/*----------------*/
+/*Responsive Affiliate Banner End */
+/*----------------*/

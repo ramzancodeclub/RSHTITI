@@ -1,0 +1,24 @@
+/*----------------*/
+/*header start */
+/*----------------*/
+header {
+    background-color: hsl( var(--clr-white) );
+    padding: 1rem 3rem;
+}
+/*----------------*/
+/*header end */
+/*----------------*/
+
+/*----------------*/
+/*responsive header start */
+/*----------------*/
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 1rem;
+    }
+}
+
+/*----------------*/
+/*responsive header end */
+/*----------------*/

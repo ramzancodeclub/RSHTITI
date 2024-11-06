@@ -311,8 +311,15 @@
     }
 
     .footer-copyright {
-        height: 8rem;
         padding: 1rem 2rem;
+    }
+
+    .footer-copyright p {
+        font-size: 1rem;
+    }
+
+    .footer-link {
+        font-size: 1rem;
     }
 }
 
