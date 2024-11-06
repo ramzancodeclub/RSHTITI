@@ -79,10 +79,13 @@ background-color: hsl( var(--clr-secondary) );
   }
 }
 
-iframe {
-  width: 20rem;
+.items li {
+  border: 1px solid hsl( var(--clr-secondary) );
+}
+
+.items li img {
+  width: 22rem;
   height: 15rem;
-  border: none;
 }
 
 @supports (animation-timeline: view()) {
@@ -138,6 +141,11 @@ iframe {
 @media (max-width: 768px) {
   iframe {
     width: 15rem;
+    height: 10rem;
+  }
+
+  .items li img {
+    width: 17rem;
     height: 10rem;
   }
 }
